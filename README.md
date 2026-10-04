@@ -53,9 +53,9 @@ The table below is sorted by **Company Size / Valuation (Descending)**:
 
 ## 🔓 Open-Source Cloud Gaming & Game Streaming Projects
 
-Below is a curated list of open-source game streaming, WebRTC, and low-latency self-hosting projects, sorted by **GitHub Star Count (Descending)**.
+Below is a curated list of open-source game streaming, WebRTC, and low-latency self-hosting projects, sorted by **GitHub Stars_Count (Descending)**.
 
-| Project Name & Description | GitHub Stars 🌟 |
+| Project Name & Description | GitHub_Stars 🌟 |
 |:---|:---|
 | ☀️ **[Sunshine](https://github.com/LizardByte/Sunshine)** — **The de facto open-source self-hosted game streaming server.** Features low-latency hardware encoding for AMD, Intel, and NVIDIA GPUs. Integrates seamlessly with Moonlight clients on any device. GPL-3.0. | [![Stars](https://img.shields.io/github/stars/LizardByte/Sunshine?style=social&color=white)](https://github.com/LizardByte/Sunshine/stargazers) |
 | 🌙 **[Moonlight Qt](https://github.com/moonlight-stream/moonlight-qt)** — **Open-source NVIDIA GameStream & Sunshine client** for Windows, macOS, Linux, and Steam Deck. Delivers up to 4K 120 FPS HDR low-latency video streaming. GPL-3.0. | [![Stars](https://img.shields.io/github/stars/moonlight-stream/moonlight-qt?style=social&color=white)](https://github.com/moonlight-stream/moonlight-qt/stargazers) |
