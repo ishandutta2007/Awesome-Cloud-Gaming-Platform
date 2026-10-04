@@ -1,78 +1,116 @@
-# Awesome-Cloud-Gaming-Platform
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Gaming-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Gaming-Platform?style=social" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Gaming-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cloud-Gaming-Platform?style=social" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-# Awesome-Cloud-Gaming-Platform
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Cloud Gaming Platform Banner" width="100%" />
+</p>
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-*Focused on Game Streaming, Remote Play, Low-Latency Video & Self-Hosted Cloud Gaming*
-**Last updated: October 2026**
+# 🎮 Awesome Cloud Gaming Platform
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Cloud Gaming**. These tools help players stream games from remote servers to any device, and help developers build self-hosted cloud gaming services with low-latency video, input forwarding, and multi-client support.
+> **Curated Directory of SaaS Game Streaming Services, WebRTC Streaming Infrastructure & Open-Source Cloud Gaming Projects**
+> 
+> *Last updated: October 2026*
 
-**Examples** include Xbox Cloud Gaming, GeForce NOW, PlayStation Plus Cloud Streaming, Amazon Luna, Boosteroid, Shadow PC, Blacknut, Utomik Cloud, Antstream Arcade, and AirGPU (the category leaders).
-
-**Open-source emphasis**: Cloud gaming has a **maturing open-source ecosystem**, though **no open-source alternative matches the global server footprint of commercial platforms**. **Sunshine** (GPL-3.0) is the de facto standard for self-hosted game streaming, pairing with **Moonlight** clients for low-latency remote play with hardware encoding on AMD, Intel, and NVIDIA GPUs . **CloudMorph** provides decentralized, self-hosted Windows application streaming in the browser with Docker-based deployment . **CloudRetro** (by the same author) offers a complete retro-game streaming solution . **Wolf** provides a Kubernetes-native game streaming platform for multi-user environments. This section documents these production-grade solutions.
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## 📖 Table of Contents
-
-- [☁️ SaaS/Hosted Platforms](#-saas-hosted-platforms)
-- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
-- [🤝 How to Contribute](#-how-to-contribute)
-- [⚠️ Disclaimer](#-disclaimer)
-
-## ☁️ SaaS/Hosted Platforms
-
-> **📊 Market Context**: The global cloud gaming market is estimated at **~$8.5B in 2026**, growing toward **~$35B by 2032** at a **~26% CAGR** (Mordor Intelligence / MarketsandMarkets estimates). The sector is **moderately concentrated** at the platform tier — Microsoft, NVIDIA, Sony, and Amazon each command significant segments, but **AI infrastructure cost inflation is reshaping the economics**: GeForce NOW imposed a **100-hour monthly cap** in January 2026, and Xbox Cloud Gaming began limiting playtime by membership tier . Microsoft's gaming division reported **$5.34B in quarterly revenue (down 7% YoY)** amid hardware declines, while cloud infrastructure carries more of the gaming experience . No single vendor holds a winner-take-all position; regional specialists (Boosteroid, Shadow, Blacknut) compete on price and catalog breadth.
-
-| Platform | Description | Pricing (Starting Tier) | Free Tier Limits | Company Size |
-|----------|-------------|------------------------|------------------|--------------|
-| **[Xbox Cloud Gaming](https://www.xbox.com/cloud-gaming)** | Microsoft's cloud gaming service. Streams Game Pass titles and owned games to Xbox, PC, mobile, and browser. | **Game Pass Ultimate**: **$19.99/month** (includes cloud gaming, 100+ games, EA Play) . **Game Pass Essential**: **$9.99/month** (no cloud gaming) . | **Ad-supported free tier (Xbox Insiders beta)**: Stream **owned games** with **~2 minutes of pre-session ads**, **1-hour session limit**, save warnings at 10 and 5 minutes remaining . | **~$331.8B revenue (Microsoft FY2026)**  |
-| **[GeForce NOW](https://www.nvidia.com/en-us/geforce-now/)** | NVIDIA's cloud gaming service. Streams PC games from Steam, Epic, and other stores. RTX 5080 rigs on Ultimate tier. | **Performance**: **$9.99/month** (1440p, 6-hour sessions) . **Ultimate**: **$19.99/month** (4K, 8-hour sessions, RTX 5080) . **India**: ₹999/month (Performance), ₹1,999/month (Ultimate) . | **Free tier**: Ad-supported, **1-hour sessions**, **1080p/60fps**, standard queue, "Basic" rig (4 vCPU, 14GB RAM) . **100-hour monthly cap** introduced 2026; unused hours roll over up to 15 hours . | **~$3.5T market cap (NVIDIA FY2026 est.)** |
-| **[PlayStation Plus Premium](https://www.playstation.com/en-us/ps-plus/)** | Sony's top-tier subscription with cloud streaming for PS3 classics and select PS4/PS5 titles. Streams to PS4, PS5, and PC. | **Premium**: **$19.99/month**, **$159.99/year** (US) . **Extra**: $134.99/year (no streaming) . **Essential**: $79.99/year . | **No free tier**. **Premium required** for cloud streaming. **7-day free trial** available for new subscribers (region-dependent). | **~$30B gaming revenue (Sony FY2025 est.)** |
-| **[Amazon Luna](https://luna.amazon.com/)** | Amazon's cloud gaming service. Channels include Luna+, Ubisoft+, Family, and Retro. GameNight included with Prime. | **Luna Premium**: **$9.99/month** . **Luna+ channel**: additional subscription. **Ubisoft+**, **Family**, **Retro** channels sold separately . | **Prime members**: Rotating selection of games via **Luna Standard** at **no extra cost** . **Luna Premium**: **7-day free trial** (new subscribers only) . | **~$638B revenue (Amazon FY2025)**  |
-| **[Boosteroid](https://boosteroid.com/)** | Ukrainian cloud gaming service with broad PC game access. No published hour caps. US server presence across seven states. | **Ultra**: **€12.89/month** (€7.49/month billed annually) . **Ultra Pro**: **€14.89/month** (promotional €8.97/month) with ray tracing and 4K/120fps . | **No free tier** — testing requires paying at least one billing cycle . | **Private (~$10M+ raised est.)** |
-| **[Shadow PC](https://shadow.tech/)** | Cloud computing service providing a full Windows PC in the cloud. Used for gaming, design, and development. | **Shadow PC**: **$19.99/month** (starting) . **Shadow Ultra** and **Infinite** tiers available at higher price points. | **No free tier**. **No free trial** . | **Private (~$100M+ raised est.)** |
-| **[Blacknut](https://www.blacknut.com/)** | French cloud gaming service with a curated catalog of 500+ games. No downloads, no playtime limits. | **Blacknut**: **$15.99/month** (unlimited access) . | **30-day free trial** exclusive on VIZIO OS (US residents, select models) . | **Private (~$20M+ raised est.)** |
-| **[Antstream Arcade](https://www.antstream.com/)** | Retro cloud gaming service with 1,300+ licensed classics. Playable on iPhone, iPad, Android, PC, and consoles. | **Monthly**: **R$24.90** (~$5/month) . **Yearly**: **R$99.90** (~$20/year) . | **7-day free trial** on annual subscription . | **Private (~$10M+ raised est.)** |
-| **[AirGPU](https://airgpu.com/)** | GPU cloud platform for gaming and rendering. Managed, BYOC, and self-managed options. | **SHARED (Managed)**: **$0/month** (evaluation) . **STANDARD (Managed)**: **$0.99/hour** . **ENTERPRISE (Managed)**: **$1.49/hour** . | **SHARED free tier**: One workspace for **evaluation and non-production testing** . **$600 free credits** for STANDARD trial . | **Private (~$5M+ raised est.)** |
-
-## 🔓 Open-Source GitHub Projects
-
-Sorted by star count (descending). Star badge links to each repo's stargazers page.
-
-| Repo | Description | Stars |
-|---|---|---|
-| **[Sunshine](https://github.com/LizardByte/Sunshine)** — **The de facto standard for self-hosted game streaming.** Low-latency cloud gaming server with **AMD, Intel, and NVIDIA hardware encoding** (plus software encoding). Web UI for configuration and client pairing. Pairs with **Moonlight** clients on any device. GPL-3.0 . | [![Stars](https://img.shields.io/github/stars/LizardByte/Sunshine?style=social&color=white)](https://github.com/LizardByte/Sunshine/stargazers) | ~22,000 |
-| **[Moonlight](https://github.com/moonlight-stream/moonlight-qt)** — **Open-source game streaming client.** Works with Sunshine and NVIDIA GameStream. Available on PC, Mac, Linux, Android, iOS, Apple TV, and more. GPL-3.0. | [![Stars](https://img.shields.io/github/stars/moonlight-stream/moonlight-qt?style=social&color=white)](https://github.com/moonlight-stream/moonlight-qt/stargazers) | ~12,000 |
-| **[CloudMorph](https://github.com/giongto35/cloud-morph)** — **Decentralized, self-hosted cloud gaming/application platform.** Streams any Windows game or app to the browser with **Docker-based one-line deployment**. Low-latency streaming, OS event simulation, P2P network support. Also ships an **OpenEnv-compatible Wine environment** for RL agents . | [![Stars](https://img.shields.io/github/stars/giongto35/cloud-morph?style=social&color=white)](https://github.com/giongto35/cloud-morph/stargazers) | ~1,800 |
-| **[Wolf](https://github.com/games-on-whales/wolf)** — **Kubernetes-native game streaming platform.** Runs multiple game streaming sessions on a single host with container isolation. Designed for multi-user cloud gaming servers. MIT. | [![Stars](https://img.shields.io/github/stars/games-on-whales/wolf?style=social&color=white)](https://github.com/games-on-whales/wolf/stargazers) | ~1,200 |
-| **[CloudRetro](https://github.com/giongto35/cloud-game)** — **Self-hosted cloud gaming service for retro games.** Sister project to CloudMorph. Runs classic consoles in the cloud, streamed to any browser with collaborative play support. MIT . | [![Stars](https://img.shields.io/github/stars/giongto35/cloud-game?style=social&color=white)](https://github.com/giongto35/cloud-game/stargazers) | ~1,000 |
-
-**Additional open-source options worth exploring:**
-
-| Repo | Description |
-|---|---|
-| **[Selkies-GStreamer](https://github.com/selkies-project/selkies-gstreamer)** — Open-source low-latency remote desktop and application streaming platform. WebRTC-based, used for cloud gaming and GPU-accelerated remote work. | [![Stars](https://img.shields.io/github/stars/selkies-project/selkies-gstreamer?style=social&color=white)](https://github.com/selkies-project/selkies-gstreamer/stargazers) |
-| **[GameStream (Sunshine fork)](https://github.com/LizardByte/Sunshine)** — Community-maintained fork of NVIDIA GameStream for local streaming. | [![Stars](https://img.shields.io/github/stars/LizardByte/Sunshine?style=social&color=white)](https://github.com/LizardByte/Sunshine/stargazers) |
-
-## 🤝 How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## ⚠️ Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Cloud gaming platforms handle sensitive account credentials and streaming data; ensure proper security configuration and compliance with platform terms of service.
-- **Open-source reality**: The open-source ecosystem for cloud gaming is **maturing but incomplete**. **Sunshine** is the de facto standard for self-hosted game streaming, pairing with **Moonlight** clients for low-latency remote play with hardware encoding on AMD, Intel, and NVIDIA GPUs . **CloudMorph** provides decentralized, self-hosted Windows application streaming in the browser with Docker-based deployment . **Wolf** offers a Kubernetes-native multi-user game streaming platform. However, **no open-source alternative matches the global server footprint, catalog breadth, or managed infrastructure of commercial platforms** (Xbox Cloud Gaming, GeForce NOW, PlayStation Plus). The open-source path is **genuinely viable** for **local/remote play from your own gaming PC**, **self-hosted retro gaming services**, or **organizations with strong infrastructure engineering capacity** seeking full control over their game streaming stack.
-- **Pricing caveat**: All pricing figures above are **verified against cited search results** but may change without notice. Regional pricing, promotional rates, and subscription terms vary significantly. Always check the provider's official page for current pricing.
+Welcome to the ultimate **SEO-curated list of Cloud Gaming Platforms, Game Streaming Software, and Self-Hosted Remote Play Tools**. Whether you are looking for commercial SaaS cloud gaming subscriptions (GeForce NOW, Xbox Cloud Gaming, PlayStation Plus, Amazon Luna) or building your own low-latency game streaming server using open-source tools (Sunshine, Moonlight, CloudMorph, Wolf), this repository covers the entire ecosystem.
 
 ---
 
-**Made for gamers, self-hosting enthusiasts, cloud infrastructure engineers, and game streaming developers.**
-Let's make cloud gaming more open, self-hostable, and accessible.
+## 📖 Table of Contents
+
+- [☁️ SaaS & Commercial Cloud Gaming Platforms](#️-saas--commercial-cloud-gaming-platforms)
+- [🔓 Open-Source Cloud Gaming & Game Streaming Projects](#-open-source-cloud-gaming--game-streaming-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#-disclaimer)
+
+---
+
+## ☁️ SaaS & Commercial Cloud Gaming Platforms
+
+> **📊 Market Context & Structure**: The global cloud gaming market is estimated at **~$8.5B in 2026**, growing toward **~$35B by 2032** at a **~26% CAGR** (Mordor Intelligence / MarketsandMarkets). The sector is **moderately concentrated** at the infrastructure tier — hyperscalers (NVIDIA, Microsoft, Amazon, Sony) dominate server distribution, while remaining **fragmented at the content & service tier**, allowing regional specialists (Boosteroid, Shadow PC, Blacknut) to compete on pricing and catalog breadth without a winner-take-all monopoly.
+
+The table below is sorted by **Company Size / Valuation (Descending)**:
+
+| Platform | Description | Pricing (Starting Tier) | Free Tier Limits | Company Size / Valuation 📈 |
+|:---|:---|:---|:---|:---|
+| **[GeForce NOW](https://www.nvidia.com/en-us/geforce-now/)** | NVIDIA's flagship cloud gaming platform streaming Steam, Epic Games, and PC libraries with RTX 5080 graphics. | **Performance**: **$9.99/month** (1440p, 6-hr sessions) . **Ultimate**: **$19.99/month** (4K, 8-hr sessions) | **Free tier**: **1-hour ad-supported sessions**, **1080p/60fps**, standard queue, 100-hour monthly cap | **~$3.5T Market Cap** (NVIDIA FY2026) |
+| **[Xbox Cloud Gaming](https://www.xbox.com/cloud-gaming)** | Microsoft's cloud streaming service included with Game Pass Ultimate for Xbox, PC, mobile, and web browsers. | **Game Pass Ultimate**: **$19.99/month** (includes cloud streaming & 100+ titles) | **Ad-supported beta**: Stream owned games with **~2-min ads** & **1-hour session limit** | **~$3.3T Market Cap** / **$331.8B Rev** (Microsoft) |
+| **[Amazon Luna](https://luna.amazon.com/)** | Amazon's web-based cloud gaming service featuring Luna+, Ubisoft+, Family, and Prime channel access. | **Luna Premium**: **$9.99/month** (Ubisoft+ & channels sold separately) | **Prime members**: Rotating selection of games at **no extra cost**; **7-day free trial** for Luna Premium | **~$2.0T Market Cap** / **$638B Rev** (Amazon) |
+| **[PlayStation Plus Premium](https://www.playstation.com/en-us/ps-plus/)** | Sony's top-tier gaming subscription enabling cloud streaming for PS3, PS4, and select PS5 titles. | **Premium**: **$19.99/month** or **$159.99/year** | **No free tier** (Requires Premium subscription; **7-day free trial** in select regions) | **~$120B Market Cap** / **$30B Gaming Rev** (Sony) |
+| **[Shadow PC](https://shadow.tech/)** | Full Windows cloud PC platform for high-end cloud gaming, 3D rendering, and software development. | **Shadow PC**: **$19.99/month** (starting configuration) | **No free tier** & **No free trial** (Paid subscription required from day 1) | **~$100M+ Raised** (Subsidiary of OVHcloud) |
+| **[Blacknut](https://www.blacknut.com/)** | Family-focused French cloud gaming service providing unlimited access to 500+ curated games. | **Blacknut**: **$15.99/month** (unlimited multi-device streaming) | **30-day free trial** (Exclusive on select VIZIO OS smart TVs) | **~$20M+ Raised** (Private VC funded) |
+| **[Boosteroid](https://boosteroid.com/)** | Independent cloud gaming platform offering broad PC title access with server locations across Europe and US. | **Ultra**: **€12.89/month** (€7.49/mo billed annually) . **Ultra Pro**: **€14.89/month** | **No free tier** (Requires active paid plan; connection latency testing free on website) | **~$10M+ Raised** (Private startup) |
+| **[Antstream Arcade](https://www.antstream.com/)** | Retro game streaming platform featuring over 1,300 licensed retro classics and global tournament challenges. | **Monthly**: **~$4.99/month** (R$24.90) . **Yearly**: **~$20/year** (R$99.90) | **7-day free trial** (Available on annual subscription tier) | **~$10M+ Raised** (Private VC funded) |
+| **[AirGPU](https://airgpu.com/)** | On-demand cloud GPU virtual machines built specifically for cloud gaming and graphics applications. | **STANDARD**: **$0.99/hour** . **ENTERPRISE**: **$1.49/hour** | **SHARED evaluation tier**: 1 workspace for non-production testing; **$600 trial credits** | **~$5M+ Raised** (Private bootstrapped/VC) |
+
+---
+
+## 🔓 Open-Source Cloud Gaming & Game Streaming Projects
+
+Below is a curated list of open-source game streaming, WebRTC, and low-latency self-hosting projects, sorted by **GitHub Star Count (Descending)**.
+
+| Project Name & Description | GitHub Stars 🌟 |
+|:---|:---|
+| ☀️ **[Sunshine](https://github.com/LizardByte/Sunshine)** — **The de facto open-source self-hosted game streaming server.** Features low-latency hardware encoding for AMD, Intel, and NVIDIA GPUs. Integrates seamlessly with Moonlight clients on any device. GPL-3.0. | [![Stars](https://img.shields.io/github/stars/LizardByte/Sunshine?style=social&color=white)](https://github.com/LizardByte/Sunshine/stargazers) |
+| 🌙 **[Moonlight Qt](https://github.com/moonlight-stream/moonlight-qt)** — **Open-source NVIDIA GameStream & Sunshine client** for Windows, macOS, Linux, and Steam Deck. Delivers up to 4K 120 FPS HDR low-latency video streaming. GPL-3.0. | [![Stars](https://img.shields.io/github/stars/moonlight-stream/moonlight-qt?style=social&color=white)](https://github.com/moonlight-stream/moonlight-qt/stargazers) |
+| 📱 **[Moonlight Android](https://github.com/moonlight-stream/moonlight-android)** — Open-source Moonlight game streaming client for Android smartphones, tablets, Android TV, and NVIDIA Shield devices. | [![Stars](https://img.shields.io/github/stars/moonlight-stream/moonlight-android?style=social&color=white)](https://github.com/moonlight-stream/moonlight-android/stargazers) |
+| 🚀 **[CloudMorph](https://github.com/giongto35/cloud-morph)** — **Decentralized, self-hosted Windows application & cloud gaming platform.** Browser-based streaming powered by Docker containers, WebRTC, and Go. Includes OpenEnv RL environment support. | [![Stars](https://img.shields.io/github/stars/giongto35/cloud-morph?style=social&color=white)](https://github.com/giongto35/cloud-morph/stargazers) |
+| 🐺 **[Wolf](https://github.com/games-on-whales/wolf)** — **Kubernetes-native game streaming infrastructure.** Isolates and streams multiple desktop/game instances in Docker containers with hardware acceleration. Designed for multi-tenant cloud gaming. MIT. | [![Stars](https://img.shields.io/github/stars/games-on-whales/wolf?style=social&color=white)](https://github.com/games-on-whales/wolf/stargazers) |
+| 🕹️ **[CloudRetro](https://github.com/giongto35/cloud-game)** — Open-source WebRTC cloud gaming server for retro games. Play classic console games directly in your browser with multi-player support and zero client install. MIT. | [![Stars](https://img.shields.io/github/stars/giongto35/cloud-game?style=social&color=white)](https://github.com/giongto35/cloud-game/stargazers) |
+| 📹 **[Selkies-GStreamer](https://github.com/selkies-project/selkies-gstreamer)** — Open-source WebRTC high-performance GPU application streaming platform powered by GStreamer. Designed for cloud gaming and remote desktop workloads. | [![Stars](https://img.shields.io/github/stars/selkies-project/selkies-gstreamer?style=social&color=white)](https://github.com/selkies-project/selkies-gstreamer/stargazers) |
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are always welcome! 
+
+1. 🍴 **Fork** the repository.
+2. 📝 **Add or update** entries in `README.md` following the table schema.
+3. 🔗 Ensure all links lead to official sites or verified GitHub repositories.
+4. 🚀 Submit a **Pull Request** with a brief summary of changes.
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find this repository helpful for discovering cloud gaming services or building self-hosted game streaming infrastructure, please consider supporting the project!
+
+- ⭐ **Star this repository** to show your appreciation.
+- 🔀 **Fork & share** it with fellow gamers, self-hosters, and cloud engineers.
+- ☕ **Buy me a coffee / Sponsor**: Support ongoing maintenance via [GitHub Sponsors](https://github.com/sponsors/ishandutta2007).
+
+<p align="center">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor%20Me-GitHub%20Sponsors-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Sponsor on GitHub" />
+  </a>
+</p>
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Cloud-Gaming-Platform&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Cloud-Gaming-Platform&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This is a community-curated collection intended for educational and research purposes.
+- All trademarks, logos, and brand names belong to their respective owners.
+- Cloud gaming services handle user credentials and streaming data; ensure appropriate network security when self-hosting.
+- Pricing and free tier terms are subject to change by respective providers.
+
+---
+
+<p align="center">
+  Maintained with ❤️ for the global gaming &amp; open-source developer community.
+  <br/>
+  Part of the <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome">Awesome-Awesome-Awesome</a> collection.
+</p>
